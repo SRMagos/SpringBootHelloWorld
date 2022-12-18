@@ -7,9 +7,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
+ * We don't have XML
  * @SpringBootApplication used to EnableAutoConfiguration ComponentScan Configuration
+ * 							@Configuration: Definitions of beans
  * @RestController Version of controller @Controller and @ResponseBody Component class. Request handling methods
- * 					Means we are going to have endpoint available over the web
+ *  				Means we are going to have endpoints available over the web
+ *  			    Returns an Object instead of a view @Controller and @ResponseBody
  */
 @SpringBootApplication
 @RestController
@@ -23,6 +26,7 @@ public class InterviewApplication
 	/**
 	 * http://localhost:8080/hello?name=DobleL
 	 * Hello DobleL
+	 * http://localhost:8080/greeting?name=DobleL
 	 *
 	 * @GetMapping("/hello") Request Get Type
 	 * @RequestParam To configure parameters
